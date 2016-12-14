@@ -46,20 +46,20 @@ int main(void){
 	char line4[] = "|->";
 	char line5[] = "|->";
 	pthread_t threads[NUM_THREADS];
-	while finishLine != true {
-		if strlen(line1) = 43{
+	while (!finishLine) {
+		if strlen(line1) >= 43{
 			finishLine = true;
 		}
-		else if strlen(line2) = 43{
+		else if strlen(line2) >= 43{
                         finishLine = true;
                 }
-		else if strlen(line3) = 43{
+		else if strlen(line3) >= 43{
                         finishLine = true;
                 }
-                else if strlen(line4) = 43{
+                else if strlen(line4) >= 43{
                         finishLine = true;
                 }
-                else if strlen(line5) = 43{
+                else if strlen(line5) >= 43{
                         finishLine = true;
                 }
 		int pthread_create(threads + 1, NULL, raceUser, (void *) line1);
