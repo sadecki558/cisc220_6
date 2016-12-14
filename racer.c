@@ -62,10 +62,10 @@ int main(void){
                 else if strlen(line5) >= 43{
                         finishLine = true;
                 }
-		int pthread_create(threads + 1, NULL, raceUser, (void *) line1);
-        	int pthread_create(threads + 2, NULL, raceAI, (void *) line2);
-	        int pthread_create(threads + 3, NULL, raceAI, (void *) line3);
-        	int pthread_create(threads + 4, NULL, raceAI, (void *) line4);
-	        int pthread_create(threads + 5, NULL, raceAI, (void *) line5);
-		int pthread_create(threads + 6, NULL, printRace, (void *) [line1, line2, line3, line4, line5]);
+		int pthread_create(threads+1, NULL, raceUser, (void *) line1);
+        	int pthread_create(threads+2, NULL, raceAI, (void *) line2);
+	        int pthread_create(threads+3, NULL, raceAI, (void *) line3);
+        	int pthread_create(threads+4, NULL, raceAI, (void *) line4);
+	        int pthread_create(threads+5, NULL, raceAI, (void *) line5);
+		int pthread_create(threads+6, NULL, printRace, (void *) [line1, line2, line3, line4, line5]);
 	}
