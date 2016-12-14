@@ -1,3 +1,10 @@
+/* Cisc 220 Assignment 6
+Josh Burak - 10169785
+Alexander Gadanidis - 10186175
+Kat Pinto - 10168919
+Matthew Sadecki - 10179995
+December 13, 2016
+*/
 #include <stdlib.h>
 #include <stdio.h>
 #include <pthread.h>
@@ -7,7 +14,7 @@
 #define NUM_THREADS 6;
 
 bool finishLine = false;
-
+/* Thread for the computer AI racer */
 void* raceAI(void *args){
 	usleep(rand(100));
 	char *newarr[];
@@ -16,7 +23,7 @@ void* raceAI(void *args){
 	return args;
 }
 
-
+/* Thread for race user */
 void* raceUser(void *args){
 	getchar();
 	char *newarr[];
@@ -24,7 +31,7 @@ void* raceUser(void *args){
         args = strcat(newarr, args);
         return args;
 }
-
+/* Prints the race */
 void* printRace(void *args){
 	usleep(20);
 	system(clear);
