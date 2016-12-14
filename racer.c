@@ -68,3 +68,4 @@ int main(void){
         	int pthread_create(threads + 4, NULL, raceAI, (void *) line4);
 	        int pthread_create(threads + 5, NULL, raceAI, (void *) line5);
 		int pthread_create(threads + 6, NULL, printRace, (void *) [line1, line2, line3, line4, line5]);
+	}
