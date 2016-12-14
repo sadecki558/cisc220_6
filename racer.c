@@ -19,8 +19,8 @@ void* raceAI(void *args){
 	usleep(rand(100));
 	char *newarr[];
 	newarr[0] = "~";
-	args = strcat(newarr, args);
-	return args;
+	args[1] = strcat(newarr, args[1]);
+	return args[1];
 }
 
 /* Thread for race user */
@@ -28,8 +28,8 @@ void* raceUser(void *args){
 	getchar();
 	char *newarr[];
         newarr[0] = "~";
-        args = strcat(newarr, args);
-        return args;
+        args[1] = strcat(newarr, args[1]);
+        return args[1];
 }
 /* Prints the race */
 void* printRace(void *args){
@@ -69,3 +69,4 @@ int main(void){
 	        int pthread_create(threads+5, NULL, raceAI, (void *) line5);
 		int pthread_create(threads+6, NULL, printRace, (void *) [line1, line2, line3, line4, line5]);
 	}
+}
